@@ -1,0 +1,491 @@
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+
+                /* Styling for entire page */
+           
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+           .one{
+            height:100vh;
+            background-color: rgb(87, 15, 15); ;
+           }
+            .logo-text{
+                color:white;
+                font-size: 4rem;
+            }
+            .nav-link{
+                color:white;
+                font-size: 2.5rem;
+                padding:20px 30px;
+                border:none;  
+            }
+             header .navbar{
+                background-color: #3b141c;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:4rem;
+            }
+            .nav-menu{
+                display:flex;
+                gap: 0.5rem;
+            }
+            .nav-link:hover{
+                background-color: rgb(111, 177, 24);
+                border-radius: 40px;
+                box-shadow: 10px 10px 10px rgba(111, 177, 24, 0.5);
+            }
+            .navbar{
+                position: fixed;
+                width: 100%;
+                height: 300px;
+                border: 6px solid white;
+                /* margin-bottom:90% */
+                 
+            }
+            
+            
+            /* Styling for body*/
+
+            /* body{
+                background-color: rgba(92, 106, 19, 0.751);
+              
+                
+            } */
+                
+            h1{
+                text-align: center;
+            }
+            .phase-one{
+                background-color: rgba(135, 74, 153, 0.759);
+                width:50%;
+                padding-top: 0px;
+                margin-left: 25%;
+                margin-top: 3%;
+                border-radius: 10px;
+               
+            }
+            
+            .coffee-heading h2{
+                margin-top:0%;
+                padding:30px;
+            }
+            .card{
+                width:300px;
+                border:1px solid white;
+                border-radius: 40px;
+                background-color: rgba(84, 178, 224, 0.619);
+                overflow: hidden;
+
+            }
+            .Catagory-image img{
+                width:300px;
+                height:250px;
+                border-radius:20px 20px 10px 5px;
+                margin-bottom: 10px;
+                object-fit: cover;
+            }
+            .Card .content{
+                padding: 0px 30px;
+                padding:20px   
+            }
+            .Catagory-content{
+                border:none;
+                padding: 1%;
+
+            }
+            .Catagory-content h2{
+                text-align: center;
+                margin: 15px 0 8px;  
+            }
+            .Catagory-content{
+                margin:20px 0px;
+                font-weight: large;
+                font-size: 1.3rem;
+                padding-bottom: 10px;
+            }
+            .money{
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                font-size: 1.5rem;
+                font-weight: large;
+                margin-top: 20px;
+                
+            }
+            .money .add{
+                border: 1px solid black;
+                padding:10px 30px;
+                font-size: large;
+                border-radius: 20px;
+                background-color: rgb(166, 238, 57);
+            }
+           
+            .add:hover{
+                 box-shadow: 0px 0px 10px black;
+                
+            }
+            .total{
+                border:10px solid red;
+                background-color: rgba(92, 106, 19, 0.751);
+                margin-top: 0px;
+            }
+
+            /* Sytling for Phase two */
+            
+            .phase-Two{
+                background-color: rgba(135, 74, 153, 0.759);
+                width:50%;
+                margin-left: 25%;
+                border:0px solid black;  
+                padding-bottom: 50px; 
+            }
+            .two{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+                gap: 30px;
+                padding: 20px ;
+               
+            }
+            .heading{
+                display: flex;
+                justify-content: center;
+            }
+            .heading h2{
+                border:0px solid white;
+                border-radius: 20px 100px;
+                background-color: rgba(255, 255, 0, 0.575);
+                font-size: 4rem;
+                margin:60px;
+                padding: 20px;
+                margin-top: 20px;
+                padding:20px 40px;
+                text-align: center;
+                margin-top: 150px;
+            }
+            .card:hover{
+                transform: translateY(-4px);
+                box-shadow: 10px 14px 30px black;
+            }
+            .heading h2:hover{
+                box-shadow: 10px 14px 30px black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕ Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="menu-items">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                 <li class="menu-items">
+                    <a href="#" class="nav-link">Offers</a>
+                </li>
+                 <li class="menu-items">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+                 <li class="menu-items">
+                    <a href="home.html" class="nav-link">Gallery</a>
+                </li>
+                 <li class="menu-items">
+                    <a href="#" class="nav-link">Cart</a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+        <section class="total">
+            <section class="phase-one">
+                <div class="heading">
+                    <h2 class="coffee-heading">☕ Choose Your Perfect Coffee</h1>
+                </div>
+                <div class="Two">
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/espresso coffe.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Espresso</h2>
+                                <p>A small, concentrated shot of coffee.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Americano coffe.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Americano</h2>
+                                <p>Espresso mixed with hot water.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Long Black coffe.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Long Black</h2>
+                                <p>Hot water with espresso poured on top (common in Australia/New Zealand).</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Drip coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Drip Coffee</h2>
+                                <p>Brewed by filtering hot water through ground coffee.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Pour coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Pour-Over</h2>
+                                <p>Hand-brewed using a filter.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+                   <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/French Press coffee.png " alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>French Press</h2>
+                                <p>Coffee steeped in hot water and pressed with a plunger.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+                    
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Cold coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Cold Brew</h2>
+                                <p>Coffee steeped in cold water for 12–24 hours.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Latte coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Latte Coffe</h2>
+                                <p>Coffee steeped in cold water for 12–24 hours.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Instant Coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Instant Coffee</h2>
+                                <p>Coffee steeped in cold water for 12–24 hours.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Robusta coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Robusta Coffee</h2>
+                                <p>Coffee steeped in cold water for 12–24 hours.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+
+                    <div class="Card">
+                        <div class="Catagory-image">
+                            <img src="images/Catagory-images/Cappuccino coffee.png" alt="coffee image">
+                        </div> 
+                        <div class="content">
+                            <div class="Catagory-content">
+                                <h2>Cappuccino Coffee</h2>
+                                <p>Coffee steeped in cold water for 12–24 hours.</p>
+                            </div>
+                            <div class="money">
+                                <span>Price: 50 ₹</span>
+                                <button class="add">ADD</button>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section class="phase-Two">
+                    <div class="heading">
+                        <h2>Choose Your Perfect TEA</h2>
+                    </div>
+                    <div class="two">
+                        <div class="Card">
+                            <div class="Catagory-image">
+                                <img src="images/Tea-images/Black Tea.png" alt="coffee image">
+                            </div> 
+                            <div class="content">
+                                <div class="Catagory-content">
+                                    <h2>Cappuccino Coffee</h2>
+                                    <p>Coffee steeped in cold water for 12–24 hours.</p>
+                                </div>
+                                <div class="money">
+                                    <span>Price: 50 ₹</span>
+                                    <button class="add">ADD</button>
+                                </div> 
+                            </div>
+                        </div> 
+
+
+                        <div class="Card">
+                            <div class="Catagory-image">
+                                <img src="images/Tea-images/Tulasi Tea.png" alt="coffee image">
+                            </div> 
+                            <div class="content">
+                                <div class="Catagory-content">
+                                    <h2>Cappuccino Coffee</h2>
+                                    <p>Coffee steeped in cold water for 12–24 hours.</p>
+                                </div>
+                                <div class="money">
+                                    <span>Price: 50 ₹</span>
+                                    <button class="add">ADD</button>
+                                </div> 
+                            </div>
+                        </div> 
+
+
+                        <div class="Card">
+                            <div class="Catagory-image">
+                                <img src="images/Tea-images/Lemon Tea.png" alt="coffee image">
+                            </div> 
+                            <div class="content">
+                                <div class="Catagory-content">
+                                    <h2>Cappuccino Coffee</h2>
+                                    <p>Coffee steeped in cold water for 12–24 hours.</p>
+                                </div>
+                                <div class="money">
+                                    <span>Price: 50 ₹</span>
+                                    <button class="add">ADD</button>
+                                </div> 
+                            </div>
+                        </div> 
+
+
+                        <div class="Card">
+                            <div class="Catagory-image">
+                                <img src="images/Tea-images/Normal-Tea.png" alt="coffee image">
+                            </div> 
+                            <div class="content">
+                                <div class="Catagory-content">
+                                    <h2>Cappuccino Coffee</h2>
+                                    <p>Coffee steeped in cold water for 12–24 hours.</p>
+                                </div>
+                                <div class="money">
+                                    <span>Price: 50 ₹</span>
+                                    <button class="add">ADD</button>
+                                </div> 
+                            </div>
+                        </div> 
+
+                        <div class="Card">
+                            <div class="Catagory-image">
+                                <img src="images/Tea-images/Ginger Tea.png" alt="coffee image">
+                            </div> 
+                            <div class="content">
+                                <div class="Catagory-content">
+                                    <h2>Cappuccino Coffee</h2>
+                                    <p>Coffee steeped in cold water for 12–24 hours.</p>
+                                </div>
+                                <div class="money">
+                                    <span>Price: 50 ₹</span>
+                                    <button class="add">ADD</button>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+            </sectio>
+        </section>
+    </body>
+</html>
